@@ -31,7 +31,7 @@ do {
 
     // Logica para gerar o numero
 
-    numeroAleatorio = Math.floor(Math.random() * 1);
+    numeroAleatorio = Math.floor(Math.random() * 11);
     console.log("Numero Aleatório " + numeroAleatorio);
 
     // Estrutura de decisão de comparação e adição de classes.
