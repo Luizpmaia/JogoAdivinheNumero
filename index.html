@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet" />
+
+    <title>Acerte o Numero</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <audio id="musica" src="audio/Lobby - GunBound OST_lDIjeMm0KIY.mp3" autoplay loop></audio>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div>
+          <h1>Advinhe o numero que estou pensando? Está entre 0 e 10</h1>
+        </div>
+        <h2 id="mensagemErrouAcertou">Você está pronto?</h2>
+      </header>
+      <div id="addTextoTelaVencedor"></div>
+      <main>
+        <div id="addTelaVencedor"></div>
+        <ul class="semTelaToda" id="liBotao">
+          <li onclick="escolherNumero(event)" value="0">0</li>
+          <li onclick="escolherNumero(event)" value="1">1</li>
+          <li onclick="escolherNumero(event)" value="2">2</li>
+          <li onclick="escolherNumero(event)" value="3">3</li>
+          <li onclick="escolherNumero(event)" value="4">4</li>
+          <li onclick="escolherNumero(event)" value="5">5</li>
+          <li onclick="escolherNumero(event)" value="6">6</li>
+          <li onclick="escolherNumero(event)" value="7">7</li>
+          <li onclick="escolherNumero(event)" value="8">8</li>
+          <li onclick="escolherNumero(event)" value="9">9</li>
+          <li onclick="escolherNumero(event)" value="10">10</li>
+        </ul>
+      </main>
+
+      <footer>
+        <button onclick="novaRodada()">Nova Rodada</button>
+        <div>
+          <img onclick="ativarDesativarMusica()" src="icons/music_eigth_note.png" alt="" />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
